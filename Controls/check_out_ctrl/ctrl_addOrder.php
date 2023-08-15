@@ -46,8 +46,11 @@ if ($kq == true) {
 
 
     }
+    unset($_SESSION['cart']);
     $olderUrl = "http://localhost:8181/Noraute/checkout.php";
+
     header("Location:$olderUrl?SuccessOrder=1");
+
 } else {
     $olderUrl = "http://localhost:8181/Noraute/checkout.php";
     header("Location:$olderUrl?SuccessOrder=-1");
