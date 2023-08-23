@@ -16,11 +16,11 @@ foreach ($orderDetails as $key => $value) {
 }
 $kq=$clsOrder->updateStatusOrder($order_id,4);
 if($kq==true){
-    $olderUrl="http://localhost:8181/Noraute/my-account.php";
+    $olderUrl="http://localhost/Noraute/my-account.php";
 header("Location:$olderUrl?UpdAcountSuccess=1");
 }
 else {
-    $olderUrl="http://localhost:8181/Noraute/my-account.php";
+    $olderUrl="http://localhost/Noraute/my-account.php";
     header("Location:$olderUrl?UpdAcountSuccess=-1");
 }
 ?>

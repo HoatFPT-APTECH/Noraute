@@ -189,7 +189,7 @@
         body.onload = function()
         {
             
-                window.location="http://localhost:8181/Noraute/admin_page/login.php";
+                window.location="http://localhost/Noraute/admin_page/login.php";
            
         }
         </script>

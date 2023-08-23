@@ -3,7 +3,7 @@ session_start();
 require_once("../../Models/clsUser.php");
 $clsUser= new clsUser();
 $imageUser=$_FILES["imageUser"];
-$imageNameConvert= $clsUser->convertToMd5($imageUser);// ten day du cua anh sau khi da con vert sang dịnh dang md5;
+$imageNameConvert= $imageUser['name'];// ten day du cua anh sau khi da con vert sang dịnh dang md5;
 $fullName=$_REQUEST["fullName"];
 $address=$_REQUEST["address"];
 $phoneNumber=$_REQUEST["phoneNumber"];
@@ -21,11 +21,11 @@ $ketqua=$clsUser->updateUser($id, $password, $fullName, $email, $phoneNumber, $a
 
 if($ketqua==true){
  
-    $olderUrl="http://localhost:8181/Noraute/my-account.php" ;
+    $olderUrl="http://localhost/Noraute/my-account.php" ;
  header("Location:$olderUrl?UpdAcountSuccess=1");
 }
 else{
-    $olderUrl="http://localhost:8181/Noraute/my-account.php" ;
+    $olderUrl="http://localhost/Noraute/my-account.php" ;
     header("Location:$olderUrl?UpdAcountSuccess=-1");
 }
 ?>

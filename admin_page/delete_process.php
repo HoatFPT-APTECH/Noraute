@@ -13,7 +13,7 @@ if(isset($_REQUEST["id"]))
         else
         {
             echo "<h3>SUCCESS TO DELETE DATA</h3>";
-            header("Location:http://localhost:8181/Noraute/admin_page/products.php?login=true");
+            header("Location:http://localhost/Noraute/admin_page/products.php?login=true");
         }
     }
     else

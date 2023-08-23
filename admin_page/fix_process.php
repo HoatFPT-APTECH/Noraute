@@ -47,6 +47,6 @@ if($ketqua==FALSE)
 else
 {
     echo "<h3>SUCCESS TO FIX DATA</h3>";
-    header("Location:http://localhost:8181/Noraute/admin_page/products.php?login=true");
+    header("Location:http://localhost/Noraute/admin_page/products.php?login=true");
 }
 ?>
